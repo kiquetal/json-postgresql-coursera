@@ -19,3 +19,11 @@
 
     SELECT count(body) FROM pg19337 WHER to_tsquery('english','tiny <-> tim') @@ to_tsvector('english',body);
 
+
+
+    SELECT id, to_tsquery('english','neon') @@ to_tsvector('english',body) from messages limit 1
+#### URL
+
+https://www.pg4e.com/lectures/06-Python.php
+https://www.pg4e.com/lectures/06-JSON.php
+https://www.pg4e.com/lectures/05-FullText.php
